@@ -1099,6 +1099,9 @@ section,
     font-size: 14px;
     margin: 0 0 10px 0;
   }
+  .col-lg-6 {
+    flex: 1 1 50%; /* Dos columnas en pantallas grandes */
+  }
 }
 
 .portfolio .portfolio-item {
@@ -1397,18 +1400,32 @@ section,
   padding-left: 5px;
 }
 
+.precio {
+  font-size: 1.8rem;
+  color: #ff5722; 
+  font-weight: bold; 
+  margin: 1rem 0; 
+  text-align: center; 
+}
+
 #botTienda{
-  width: 150px;
-  height: 75px;
-  border-radius: 10%;
-  margin-bottom: 2pc;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 1rem auto; 
   display: block; 
-  margin: auto;
+  text-align: center;
+}
+#botTienda:hover {
+  background-color: #45a049;
 }
 
 .partesTienda{
-  border: 1px solid gray ;
-  padding: 2pc;
+  margin-bottom: 2rem
 }
 .g i {
   font-size: 2rem; /* Ajusta el tamaño a tu gusto */
@@ -1417,6 +1434,23 @@ section,
 }
 
 .imagenM{
-  display: block; 
+  display: block;
+  max-width: 100%;
+  height: auto;
   margin: auto;
+  border-radius: 5px;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap; 
+  align-items: center; 
+}
+@media (max-width: 991px) {
+  .row {
+    flex-direction: column; 
+  }
+
+  .col-lg-6, .col-md-12, .col-sm-12 {
+    flex: 1 1 100%; 
+  }
 }
