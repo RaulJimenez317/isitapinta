@@ -1460,7 +1460,7 @@ section,
   right: 20px;
   top: 60px;
   width: 320px;
-  background-color: #a75636;
+  background-color: #203b63;
   border: 1px solid #000000;
   color: white;
   box-shadow: 0 4px 10px rgb(36, 102, 156);
@@ -1495,7 +1495,7 @@ section,
 #lista-carrito li {
   margin-bottom: 15px; 
   padding: 10px;
-  border-bottom: 1px solid #a3865a;
+  border-bottom: 1px solid #264458;
   display: block;       
   font-size: 16px;
   background-color: #7fa4b9; 
@@ -1521,5 +1521,23 @@ section,
   color: white;
 }
 
+#botCarrito{
+  background-color: #3cacac;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 1rem auto; 
+  display: block; 
+  text-align: center;
+}
 
+#botCarrito:hover {
+  background-color: #72a39f;
+}
 
+.simbolCart{
+  height: 35px;
+}

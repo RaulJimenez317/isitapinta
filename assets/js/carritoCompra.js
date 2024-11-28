@@ -48,7 +48,7 @@ function actualizarCarrito() {
 
   totalElement.textContent = `Total: $${total.toFixed(2)}`;
   guardarCarritoEnLocalStorage();
-  agregarEventosEliminar(); 
+  agregarEventosEliminar();
 }
 
 function agregarEventosEliminar() {
@@ -80,6 +80,7 @@ function cargarCarritoDesdeLocalStorage() {
 if (carrito.length > 0) {
   actualizarCarrito();
 }
+
 
 
 
