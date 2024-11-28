@@ -55,15 +55,21 @@
           <li><a href="index.html">Consejos</a></li>
           <li><a href="tienda.html" class="active">Tienda</a></li>
           <li><a href="contacto.html">Contacto</a></li>
-          <li><a href="carritoCompra.html"><i class="fas fa-shopping-cart"></i></a></li>
+          <li><a href="#carrito" class="carrito-toggle"><i class="fas fa-shopping-cart"></i></a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
+      
 
     </div>
   </header>
 
   <main class="main">
+    <div id="carrito" class="carrito-container">
+      <h2 id="carritoTitulo">Carrito de Comprass</h2>
+      <ul id="lista-carrito"></ul>
+      <p id="total">Total: $0</p>
+    </div>
 
     <!-- Page Title -->
     <div class="page-title dark-background">
@@ -80,7 +86,7 @@
 
     <!-- Blog Posts Section -->
     <section id="blog-posts" class="blog-posts section">
-
+      
       <div class="container partesTienda">
         <div class="row ">
           <div class="col-lg-6 col-md-12 col-sm-12">
@@ -174,7 +180,8 @@
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
+  <script src="assets/js/carritoCompra.js"></script>
+  <script src="assets/js/menuCarrito.js"></script>
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
   <script src="https://kit.fontawesome.com/00affb2f8c.js" crossorigin="anonymous"></script>
